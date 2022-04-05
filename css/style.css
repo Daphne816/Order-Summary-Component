@@ -39,7 +39,7 @@ body {
     background-color: white;
     width: 427.2px;
     border-radius: 1rem;
-    margin-top: 5.5rem;
+    margin-top: 6rem;
     font-size: 14px;
     margin-inline: auto;
 }
@@ -63,6 +63,7 @@ body {
     font-weight: 900;
     color: var(--clr-neutral-dark);
     margin-bottom: 1rem;
+	font-size: 2em;
 }
     
 #order-summary p {
