@@ -127,8 +127,10 @@ body {
 #cancel {
     color: var(--clr-neutral-desaturated);
     font-weight: 900;
-    display: block;
-    padding-block: 2.25rem;
+    display: inline-block;
+	width: 100%;
+	margin-inline: auto;
+    margin-block: 2.25rem;
 }
 
 #cancel:hover {
@@ -186,8 +188,9 @@ body {
     }
 
     #cancel {
-        padding-block: 1.5rem;
+        margin-block: 1.5rem;
         font-size: 15px;
+		margin-inline: 0;
     }
     
 
