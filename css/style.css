@@ -1,0 +1,194 @@
+/*Web Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*Custom Variables/ Colors*/
+:root {
+    /*Primary pale blue*/
+    --clr-primary-pale: hsl(225, 100%, 94%);
+
+    /*Primary bright blue*/
+    --clr-primary-bright: hsl(245, 75%, 52%);
+
+    /*Light purple*/
+    --clr-primary-purple: hsl(244, 47%, 61%);
+
+    /*Neutral very pale blue*/
+    --clr-neutral-pale: hsl(225, 100%, 98%);
+
+    /*Neutral desaturated blue*/
+    --clr-neutral-desaturated: hsl(224, 23%, 55%);
+
+
+    /*Neutral dark blue*/
+    --clr-neutral-dark: hsl(223, 47%, 23%);
+}
+
+/*Desktop*/
+/*Tested at 1440x900px*/
+
+* {box-sizing: border-box;}
+
+body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--clr-primary-pale);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#order-summary {
+    background-color: white;
+    width: 427.2px;
+    border-radius: 1rem;
+    margin-top: 5.5rem;
+    font-size: 14px;
+    margin-inline: auto;
+}
+
+#order-summary>* {
+    margin-inline: 3.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#order-summary img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-inline: 0;
+}
+
+#order-summary h1 {
+    margin-top: 2.5rem;
+    font-weight: 900;
+    color: var(--clr-neutral-dark);
+    margin-bottom: 1rem;
+}
+    
+#order-summary p {
+    font-size: 16px;
+    color: var(--clr-neutral-desaturated);
+    letter-spacing: .5px;
+    font-weight: 500;
+}   
+
+#plan {
+    display: flex;
+    background-color: var(--clr-neutral-pale);
+    margin-block: 2rem;
+    padding-block: .5rem;
+    padding-inline: 1.5rem;
+    align-items: center;
+}
+
+#plan img {
+    width: 15%; height: 15%;
+    
+}
+
+#plan p {
+    line-height: 1.25rem;
+    margin-left: 1rem;
+    font-size: 14px;
+}
+
+.plan-name {
+    color: var(--clr-neutral-dark);
+    font-weight: 900;
+    letter-spacing: normal;
+    display: block;
+}
+
+#plan a {
+    margin-left: auto;
+    color: var(--clr-primary-bright);
+    font-weight: 700;
+}
+
+#plan a:hover {
+    color: var(--clr-primary-purple);
+    text-decoration: none;
+}
+
+#payment-btn {
+    background-color: var(--clr-primary-bright);
+    color: white;
+    display: block;
+    padding-block: .75rem;
+    border-radius: .75rem;
+    font-weight: 700;
+    box-shadow: 0px 1rem 1rem var(--clr-neutral-pale);
+}
+
+#payment-btn:hover {
+    background-color: var(--clr-primary-purple);
+}
+
+#cancel {
+    color: var(--clr-neutral-desaturated);
+    font-weight: 900;
+    display: block;
+    padding-block: 2.25rem;
+}
+
+#cancel:hover {
+    color: var(--clr-neutral-dark);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Mobile*/
+/*Tested at 375x667px*/
+@media screen and (max-width: 375px) {
+
+    #order-summary {
+        width: 323.1px;
+        margin-top: 4.25rem;
+    }
+
+    #order-summary h1 {
+        margin-top: 1.5rem;
+    }
+
+    #order-summary>* {
+        margin-inline: 1.75rem;
+    }
+
+    #order-summary p {
+        font-size: 15px;
+        line-height: 1.5rem;
+    }  
+
+    #plan {
+        margin-block: 1.75rem;
+        padding-block: .25rem;
+        padding-inline: 1rem;
+    }
+
+    #plan img {
+        width: 20%; height: 20%;
+        
+    }
+    
+    #plan p, #plan a{
+        font-size: 13px;
+    }
+
+    #payment-btn {
+        padding-block: 1rem;
+    }
+
+    #cancel {
+        padding-block: 1.5rem;
+        font-size: 15px;
+    }
+    
+
+}
