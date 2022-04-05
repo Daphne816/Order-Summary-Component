@@ -30,7 +30,7 @@
 
 body {
     background-image: url("../images/pattern-background-desktop.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-color: var(--clr-primary-pale);
     font-family: 'Red Hat Display', sans-serif;
 }
